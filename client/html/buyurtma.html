@@ -49,6 +49,39 @@
 
   <div class="section_one">
 
+    <form class="form_data"  @submit.prevent="createContact">
+      
+     <div  class="mahsulot_turlari">
+      <label for="cars">Mahsulot tanlang:</label>
+
+      <select name="mahsulot" id="cars" v-model="form.mahsulot" >
+        <option value="volvo">tovar</option>
+        <option value="saab">tovar</option>
+        <option value="mercedes">tovar</option>
+        <option value="audi">tovar</option>
+        <option value="mercedes">tovar</option>
+        <option value="audi">tovar</option>
+      </select>
+     </div>
+      <div class="info">
+        
+      <div class="nechta">
+        <p>Soni</p>
+        <input type="number" name="son" v-model="form.son">
+      </div>
+      
+     <div class="manzil_text">
+      <p>Manzil</p>
+      <textarea name="manzil" id="" cols="30" rows="10" v-model="form.manzil"></textarea>
+     </div>
+    
+      <div class="tele">
+        <p>Telefon raqami</p>
+        <input type="number" name="telefon" v-model="form.telefon">
+      </div>
+      </div>
+      <button type="submit">Saqlas </button>
+    </form>
     
 
   </div>
@@ -60,5 +93,5 @@
   </div>
 
 </body>
-<script src="../js/fetch.js"></script>
+<script src="../js/frontend.js"></script>
 </html>
